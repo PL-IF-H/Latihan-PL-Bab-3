@@ -22,9 +22,9 @@ public class BeliBingkai {
         tanggal = input.nextLine();
         pembeli.dataPelanggan(nama, ID, tanggal);
         
-        System.out.println("Masukkan panjang : ");
+        System.out.print("Masukkan panjang  : ");
         panjang = input.nextDouble();
-        System.out.println("Masukkan lebar : ");
+        System.out.print("Masukkan lebar    : ");
         lebar = input.nextDouble();
         detailBingkai bingkai = new detailBingkai(panjang, lebar);
         bingkai.pilihanBingkai();
