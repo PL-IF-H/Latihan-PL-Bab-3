@@ -1,0 +1,4 @@
+Class : pemesan,lukisan
+objek : input,in,pesan,lukis
+Attribut : ya,id,nama,tanggal,panjang,lebar,jenis,luas,harga
+Behavior : setpanjang.getpanjang,setlebar,getlebar,setjenis,getjenis,getluas,diskon,harga,setpemesan,setid,getnama,getid,settanggal,gettanggal
