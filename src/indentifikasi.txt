@@ -1,0 +1,5 @@
+Identifikasi :
+class : iniBingkai
+object : bingkai
+method : inputData, luasBingkai, keluarBingkai, hitungJml, hitungTotal, displayData
+attribut : jBingkay[], hBingkai[], nama, id, tgl, luas, pilihan, Jml, Total

@@ -20,4 +20,7 @@ public class mainBingkai{
 		System.out.print("Lebar : ");
 		l = masukan.nextInt();
 		bingkai.luasBingkai(p, l);
+		bingkai.hitungJml();
+		bingkai.hitungTotal();
+		bingkai.displayData();
 	}
