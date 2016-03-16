@@ -53,5 +53,29 @@ public class diskon {
             System.out.println("Harga total yang harus anda bayar = "+harga);
         }
         }
+    public void coklatMetalik (){
+        System.out.println("Masukkan panjang : ");
+        int p=input.nextInt();
+        System.out.println("Masukkan lebar : ");
+        int l = input.nextInt();
+        int harga = p*l*2700;
+        System.out.println("Harga total yanga harus anda bayar = "+harga);
+    }
+    public void coklatBercorak (){
+        System.out.println("Masukkan panjang : ");
+        int p= input.nextInt();
+        System.out.println("Masukkan lebar : ");
+        int l = input.nextInt ();
+        int harga=p*l*2300;
+        System.out.println("Harga total yang harus anda bayar = "+harga);
+    }
+    public void hitamBercorak (){
+        System.out.println("Masukkan panjang : ");
+        int p= input.nextint();
+        System.out.println("Masukkan lebar : ");
+        int l= input.nextInt();
+        int harga = p*l*2500;
+        System.out.println("Harga total yang harus anda bayar = "+harga);
+    }
     }
 }
