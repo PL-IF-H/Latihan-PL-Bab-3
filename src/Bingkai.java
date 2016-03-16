@@ -78,7 +78,14 @@ public class Bingkai {
                                    int cm = data2.hitungUkuran() * 2700;
                                    System.out.println("Biaya yang harus Anda bayar : Rp "+cm);
                                    break;
-
+            case "Coklat Bercorak":System.out.print("Masukkan panjang     : ");
+                                   int p5 = input.nextInt();
+                                   System.out.print("Masukkan lebar       : ");
+                                   int l5 = input.nextInt();
+                                   data2.dataPemesanan(p5, l5);
+                                   int cb = data2.hitungUkuran() * 2300;
+                                   System.out.println("Biaya yang harus Anda bayar : Rp "+cb);
+                                   break;
 
 	}
     }
