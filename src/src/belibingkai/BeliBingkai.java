@@ -11,7 +11,9 @@ public class BeliBingkai {
         double panjang,lebar,harga;
         Scanner input = new Scanner(System.in);
         namaPelanggan pembeli = new namaPelanggan();
-        
+        System.out.println("---------------------------------------------------");
+        System.out.println("---------PROGRAM MENGHITUNG HARGA BINGKAI----------");
+        System.out.println("---------------------------------------------------");
         System.out.print("Masukkan Nama       : ");
         nama = input.nextLine();
         System.out.print("Masukkan ID         : ");
