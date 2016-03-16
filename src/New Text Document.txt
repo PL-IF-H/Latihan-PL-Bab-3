@@ -1,0 +1,5 @@
+Class 	: Harga , pelanggan
+Objek 	: a , a1
+Atribut	: nama,id,tanggal
+          lebar, panjang, luas, jenis, harga
+ 	  totalharga
