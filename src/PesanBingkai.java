@@ -6,7 +6,6 @@ public class PesanBingkai {
         String pilihan="", temp[], MiniDB;
         Scanner input = new Scanner(System.in);
         Scanner inputStr = new Scanner(System.in);
-        
         Bingkai bingkai[];
         System.out.println("========================================");
         System.out.println("            Pemesanan Bingkai");
@@ -28,8 +27,7 @@ public class PesanBingkai {
             bingkai[i] = new Bingkai(temp[0], temp[1], temp[2]);
         }
         System.out.printf("Harga: %.2f\n", harga(bingkai));
-        
-        
+      
     }
 	
 	private static double cekHarga(double hargaDiskon, Bingkai bingkai){
