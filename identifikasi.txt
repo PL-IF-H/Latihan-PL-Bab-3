@@ -1,0 +1,4 @@
+Class :User
+Objek :pemesan
+Attribut:nama,tanggal,id, panjang, lebar, luas, harga, a
+Behavior:Pemesan,Display,SetSisi1,SetSisi2,Luas,jenisFrame,setDiskon,harga
