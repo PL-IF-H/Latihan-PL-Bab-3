@@ -1,0 +1,29 @@
+Identifikasi
+
+Nama		: Hafid Satrio Priambodo
+NIM		: 155150207111059
+Kelas		: IF - H
+
+
+Class	: Pemesan, Pesanan
+Object	: pemesan, pesan
+Attribut: - IDPemesan,nama,tgl pesan (Pemesan)
+	  - jFrame, hargaMeter, ukurFrame, discHarga, p, l, pil (Pesanan)
+Method	: - outMenu, hargaBingkai, ukurFrame, discHarga
+	  - Pemesan, Beli
+
+Ketentuan Jenis Bingkai :
+Jenis Bingkai 	|   Harga per m		Diskon Harga
+Hitam Metalik 	|	3000		totHarga>300000 disc 5%
+Coklat Metalik 	|	2700		totHarga>450000 disc 10%
+Coklat Bercorak |	2300		totHarga>600000 disc 15%
+Hitam Bercorak 	|	2500
+Emas 		|	5000
+Perak 		|	4000
+
+
+INPUT
+-ID, nama, tgl, jenis bingkai, ukuran bingkai(p x l)
+
+OUTPUT
+totalHarga
