@@ -5,8 +5,6 @@ public class Pemesan {
     private String ID;
     private String nama;
     private String tanggal;
-    private String bingkai;
-    private int ukuran;
     
     pesanBingkai p = new pesanBingkai();
     
