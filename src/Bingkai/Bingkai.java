@@ -46,8 +46,9 @@ public class Bingkai {
 
 
     public void display(){
-
-        System.out.println("Total                 : Rp. "+hasil);
+        System.out.println("Jenis Bingkai            : "+jenis);
+        System.out.println("Ukuran                   : "+panjang*lebar+" m2");
+        System.out.println("Total                    : Rp. "+hasil);
         
     }
 }

@@ -8,7 +8,10 @@ public class Pemesan {
         id = id;
         nama = nama;
         tanggal = tanggal;
-        
-      
+
+    }
+    public void displayPemesan(String nama, String tanggal){
+        System.out.println("Pemesan             : "+nama);
+        System.out.println("Tanggal             : "+tanggal);
     }
 }
