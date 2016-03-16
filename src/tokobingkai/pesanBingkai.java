@@ -1,5 +1,6 @@
 package tokobingkai;
 public class pesanBingkai {
+    private int jenis, panjang, lebar, luas;
     String daftarBingkai[][] ={{"No.","Jenis Bingkai","Harga per m","Diskon"},
                                {"1","Hitam Metalik","3000","Ya"}, 
                                {"2","Coklat Metalik","2700","Tidak"},
@@ -13,6 +14,35 @@ public class pesanBingkai {
         for (int i = 1; i < daftarBingkai.length; i++) {
             System.out.printf("| %-3s | %-17s | %-11s | %-7s |\n",daftarBingkai[i][0],daftarBingkai[i][1],daftarBingkai[i][2],daftarBingkai[i][3]);
         }
+    }
+    public pesanBingkai(){
+        jenis = 0;
+        panjang = 0;
+        lebar = 0;
+    }
+    public pesanBingkai(int j,int p,int l){
+        jenis = j;
+        panjang = p;
+        lebar = l;
+    }
+    
+    public void setJenis(int jenis){
+        this.jenis = jenis;
+    }
+    public void setPanjang(int panjang){
+        this.panjang = panjang;
+    }
+    public void setLebar(int lebar){
+        this.lebar = lebar;
+    }
+    
+    public static int luasBingkai(int panjang,int lebar){
+        int luas = panjang*lebar;
+        return luas;
+    }
+    public static double luasBingkai(double p,double l){
+        double luas = p*l;
+        return luas;
     }
     
 }

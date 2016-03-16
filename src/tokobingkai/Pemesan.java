@@ -1,7 +1,5 @@
 package tokobingkai;
-
 import java.util.Scanner;
-
 public class Pemesan {
     Scanner in = new Scanner(System.in);
     private String ID;
