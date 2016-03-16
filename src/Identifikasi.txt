@@ -1,0 +1,4 @@
+class		:Bingkai Lukisan
+objek		:panjang lukisan,lebar lukisan, total keliling lukisan
+behavior	:keliling lukisan, diskon
+atribut		:nama, ID, tanggal pemesanan, harga
