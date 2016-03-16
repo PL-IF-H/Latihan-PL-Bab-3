@@ -55,6 +55,21 @@ public class Bingkai {
                                    }else{
                                        System.out.println("Biaya yang harus anda bayar : Rp "+em);
                                    }break;
+            case "Perak"          :System.out.print("Masukkan panjang     : ");
+                                   int p3 = input.nextInt();
+                                   System.out.print("Masukkan lebar       : ");
+                                   int l3 = input.nextInt();
+                                   data2.dataPemesanan(p3, l3);
+                                   int prk = data2.hitungUkuran() * 4000;
+                                   if (prk > 600000){
+                                       System.out.println("Selamat Anda mendapatkan diskon sebesar 5%\nBiaya yang harus Anda bayar : Rp "+ (prk - (prk*0.05)));
+                                   }else if (prk > 450000){
+                                       System.out.println("Selamat Anda mendapatkan diskon sebesar 10%\nBiaya yang harus Anda bayar : Rp "+(prk - (prk*0.1)));
+                                   }else if (prk > 300000){
+                                       System.out.println("Selamat Anda mendapatkan diskon sebesar 15%\nBiaya yang harus Anda bayar : Rp "+(prk - (prk*0.15)));
+                                   }else{
+                                       System.out.println("Biaya yang harus anda bayar : Rp "+prk);
+                                   }break;
 
 	}
     }
