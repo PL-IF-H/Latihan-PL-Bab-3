@@ -1,0 +1,15 @@
+Class : Pemesan
+Object : Pemesan, setID, setNama dan setTanggal
+Atribut : String ID, nama, tanggal dan int ukuran
+Behavior : Menentukan nilai dari ID, Nama dan Tanggal
+
+Class : pesanBingkai
+Object : displayDaftar, pesanBingkai, setJenis, setPanjang, setLebar dan luasdanharga_Bingkai
+Atribut : int jenis, panjang, lebar, luas dan daftarBingkai
+Behavior : - Menampilkan daftar harga bingkai
+           - Menghitung luas bingkai dan menghitung harga
+
+Class : diskon
+Object : diskonBingkai
+Atribut : int harga dan diskon
+Behavior : Menghitung harga diskon dari Bingkai Hitam Metalik, Emas dan Perak
