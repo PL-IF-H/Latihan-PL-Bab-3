@@ -1,0 +1,4 @@
+Class    : Pemesanan, Bingkai
+Objek    : inStr, inDouble, inPemesanan, inBingkai
+Attribut : ID, Nama, Tanggal, Jenis, Harga, Bayar, Panjang, Lebar
+Behavior : setID, setNama, setTanggal, setJenis, cekDiskon, overload cekDiskon, getHarga, setPanjang, setLebar, getLuas
