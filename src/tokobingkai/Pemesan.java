@@ -10,19 +10,15 @@ public class Pemesan {
     private String bingkai;
     private int ukuran;
     
-    public Pemesan(){
+    public void Pemesan(){
         ID = "";
         nama = "";
         tanggal = "";
-        bingkai = "";
-        ukuran = 0;
     }
-    public Pemesan(String id,String n,String t,String b,int u){
+    public void Pemesan(String id,String n,String t){
         ID = id;
         nama = n;
         tanggal = t;
-        bingkai = b;
-        ukuran = u;
     }
     public void setID(String id){
         ID = id;
@@ -30,9 +26,13 @@ public class Pemesan {
     public void setNama(String n){
         nama = n;
     }
+    public void setTanggal(String t){
+        tanggal = t;
+    }
     
     public void display(){
         System.out.println("ID : "+ID);
         System.out.println("Nama : "+nama);
+        System.out.println("Tanggal Pemesanan : "+tanggal);
     }
 }
