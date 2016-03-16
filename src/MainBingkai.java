@@ -21,14 +21,15 @@ public class MainBingkai{
 		tanggal = in.nextLine();
 		Pemesan pemesan1 = new Pemesan(nama, alamat, tanggal);
 		System.out.println("\nDaftar Jenis Bingkai : ");
+		System.out.println("Jenis Bingkai\t\tHarga per m2");
 		System.out.println(Bingkai.displayBingkai());
 		System.out.println(Bingkai.displayDiskon());
 		
 		System.out.print("Pilih Jenis Bingkai : ");
 		jenis = in.nextLine();
-		System.out.print("Panjang Bingkai     : ");
+		System.out.print("Panjang Bingkai (m) : ");
 		panjang = in.nextDouble();
-		System.out.print("Lebar Bingkai       : ");
+		System.out.print("Lebar Bingkai (m)   : ");
 		lebar = in.nextDouble();
 		Bingkai bingkai1 = new Bingkai(panjang, lebar, jenis);
 		in.nextLine();

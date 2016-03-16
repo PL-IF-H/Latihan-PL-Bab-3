@@ -7,7 +7,7 @@ objek   : bingkai lukisan
 public class Bingkai{
 	private double panjang, lebar;
 	private String jenis;
-	public static String jenisBingkai = "1. Hitam Metalik\n"+"2. Coklat Metalik\n"+"3. Coklat Bercorak\n"+"4. Hitam Bercorak\n"+"5. Emas\n"+"6. Perak\n";
+	public static String jenisBingkai = "1. Hitam Metalik\tRp 3000\n"+"2. Coklat Metalik\tRp 2700\n"+"3. Coklat Bercorak\tRp 2300\n"+"4. Hitam Bercorak\tRp 2500\n"+"5. Emas\t\t\tRp 5000\n"+"6. Perak\t\tRp 4000\n";
 	private double[] hargaPerM = {3000, 2700, 2300, 2500, 5000, 4000};
 	private double harga, total, diskon;
 	public static String nilaiDiskon = "Diskon 5% jika total harga > 300000\n"+"Diskon 10% jika total harga > 450000\n"+"Diskon 15% jika total harga > 600000\n";
