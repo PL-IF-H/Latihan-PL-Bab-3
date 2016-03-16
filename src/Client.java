@@ -2,11 +2,13 @@ package tugasprakbab3;
 
 public class Client {
     private String ID_Pesanan,nama_pemesan,tanggal;
+	//overloading constructor
     public Client(){
         ID_Pesanan = "";
         nama_pemesan = "";
         tanggal = "";
     }
+	//overloading constructor
     public Client(String id, String nama, String tgl){
         ID_Pesanan = id;
         nama_pemesan = nama;
