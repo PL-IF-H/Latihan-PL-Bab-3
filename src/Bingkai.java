@@ -70,6 +70,15 @@ public class Bingkai {
                                    }else{
                                        System.out.println("Biaya yang harus anda bayar : Rp "+prk);
                                    }break;
+            case "Coklat Metalik" :System.out.print("Masukkan panjang     : ");
+                                   int p4 = input.nextInt();
+                                   System.out.print("Masukkan lebar       : ");
+                                   int l4 = input.nextInt();
+                                   data2.dataPemesanan(p4, l4);
+                                   int cm = data2.hitungUkuran() * 2700;
+                                   System.out.println("Biaya yang harus Anda bayar : Rp "+cm);
+                                   break;
+
 
 	}
     }
