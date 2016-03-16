@@ -86,6 +86,15 @@ public class Bingkai {
                                    int cb = data2.hitungUkuran() * 2300;
                                    System.out.println("Biaya yang harus Anda bayar : Rp "+cb);
                                    break;
+            case "Hitam Bercorak" :System.out.print("Masukkan panjang     : ");
+                                   int p6 = input.nextInt();
+                                   System.out.print("Masukkan lebar       : ");
+                                   int l6 = input.nextInt();
+                                   data2.dataPemesanan(p6, l6);
+                                   int hb = data2.hitungUkuran() * 2500;
+                                   System.out.println("Biaya yang harus Anda bayar : Rp "+hb);
+                                   break;
+            default : System.out.println("Pilihan tidak tersedia");
 
 	}
     }
