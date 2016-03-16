@@ -25,10 +25,7 @@ public class MainBingkai{
 		lebar = in.nextDouble();
 		Bingkai bingkai = new Bingkai(panjang, lebar, jenis);
 		in.nextLine();
-		if(bingkai.getJenis().equals("Hitam Metalik")||bingkai.getJenis().equals("Emas")||bingkai.getJenis().equals("Perak")){
-			bingkai.hitungDiskon();
-		}
-		bingkai.hitungHarga();
+		bingkai.hitungTotal();
 		bingkai.displayData();
 	}
 }

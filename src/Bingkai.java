@@ -1,3 +1,8 @@
+/*identifikasi
+class   : Bingkai
+atribut : panjang bingkai, lebar bingkai, jenis bingkai, harga per meter, harga, total, diskon
+behavior: getLuas, displayBingkai, getHarga, getDiskon, hitungTotal, displayData
+*/
 public class Bingkai{
 	private double panjang, lebar;
 	private String jenis;
@@ -32,31 +37,54 @@ public class Bingkai{
 	public double getLuas(){
 		return panjang*lebar;
 	}
+	//overloading method
+	public double getLuas(double p, double l){
+		return p*l;
+	}
 	public static String displayBingkai(){
 		return jenisBingkai;
 	}
-	public void hitungDiskon(){
+	public double getHarga(){
+		if(jenis.equals("Hitam Metalik")){
+			harga = getLuas()*hargaPerM[0];
+		}
+		else if(jenis.equals("Coklat Metalik")){
+			harga = getLuas()*hargaPerM[1];
+		}
+		else if(jenis.equals("Coklat Bercorak")){
+			harga = getLuas()*hargaPerM[2];
+		}
+		else if(jenis.equals("Hitam Bercorak")){
+			harga = getLuas()*hargaPerM[3];
+		}
+		else if(jenis.equals("Emas")){
+			harga = getLuas()*hargaPerM[4];
+		}
+		else if(jenis.equals("Perak")){
+			harga = getLuas()*hargaPerM[5];
+		}
+		return harga;
+	}
+	public double getDiskon(){
 		if(jenis.equals("Hitam Metalik")||jenis.equals("Emas")||jenis.equals("Perak")){
-			if(harga>300000){
-				diskon = 0.5*harga;
+			if(getHarga()>300000){
+				diskon = 0.05*harga;
 			}
-			else if(harga>450000){
+			else if(getHarga()>450000){
 				diskon = 0.1*harga;
 			}
-			else if(harga>600000){
-				diskon = 1.5*harga;
+			else if(getHarga()>600000){
+				diskon = 0.15*harga;
 			}
 		}
 		else{
 			diskon = 0;
 		}
-	}
-	public double getDiskon(){
 		return diskon;
 	}
-	public void hitungHarga(){
+	public void hitungTotal(){
 		if(jenis.equals("Hitam Metalik")){
-			total = getLuas()*hargaPerM[0]-diskon;
+			total = getLuas()*hargaPerM[0]-getDiskon();
 		}
 		else if(jenis.equals("Coklat Metalik")){
 			total = getLuas()*hargaPerM[1];
@@ -68,16 +96,16 @@ public class Bingkai{
 			total = getLuas()*hargaPerM[3];
 		}
 		else if(jenis.equals("Emas")){
-			total = getLuas()*hargaPerM[4]-diskon;
+			total = getLuas()*hargaPerM[4]-getDiskon();
 		}
 		else if(jenis.equals("Perak")){
-			total = getLuas()*hargaPerM[5]-diskon;
+			total = getLuas()*hargaPerM[5]-getDiskon();
 		}
 	}
 	public void displayData(){
-		System.out.println("Panjang Bingkai : "+panjang);
-		System.out.println("Lebar Bingkai   : "+lebar);
-		System.out.println("Luas Bingkai    : "+getLuas());
-		System.out.println("Total Harga     : "+total);
+		System.out.println("Luas Bingkai    : "+getLuas()+" m2");
+		System.out.println("Harga           : Rp "+getHarga());
+		System.out.println("Diskon          : Rp "+diskon);
+		System.out.println("Total Harga     : Rp "+total);
 	}
 }
