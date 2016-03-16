@@ -5,7 +5,7 @@ public class mainBingkai {
     public static void main(String[] args) {
      Scanner in = new Scanner(System.in);
         Pemesanan a = new Pemesanan ();
-     
+        a.pemesan ();
         System.out.println("--------------------------------------------------------");
         System.out.println("| No\t|Jenis Bingkai\t\t|"+"\tHarga per meter\t|");
         System.out.println("--------------------------------------------------------");
@@ -17,6 +17,7 @@ public class mainBingkai {
         System.out.println("| 6\t|Perak\t\t\t|"+"\t 4000\t\t|");
         System.out.println("--------------------------------------------------------");
         System.out.println ("Masukkan pilihan jenis bingkai :");
+        int pilihan = in.nextInt ();
         diskon j =  new diskon ();
         switch (pilihan){
             case 1 :
