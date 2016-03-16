@@ -2,21 +2,21 @@ package Bingkai;
 
 
 public class Bingkai {
-    private int panjang,lebar;
-    private static int hasil;
-    private static int jumlah_bing;
-    private String jenis;
+    private int panjang,lebar; //fields
+    private static int hasil; //fields
+    private static int jumlah_bing; //fields
+    private String jenis; //fields
     
    public Bingkai(){
        
    }
-    public Bingkai(int panjang, int lebar, String jenis){
+    public Bingkai(int panjang, int lebar, String jenis){ //konstruktor
         this.panjang = panjang;
         this.lebar = lebar;
         this.jenis = jenis;
     }
     
-    public void displayDaftarBingkai(){
+    public void displayDaftarBingkai(){ //method
         System.out.println("------Harga per meter------");
         System.out.println("Hitam Metalik   | Rp. 3.000");
         System.out.println("Coklat Metalik  | Rp. 2.700");
