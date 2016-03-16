@@ -43,15 +43,15 @@ public class Jenis {
 
     public void Perhitungan(int x) {
         if (jen=="Hitam Metalik" || jen=="Emas" || jen=="Perak") {
-            if (x>300000) {
+            if (x>=300000 && x <450000) {
                 ttl = (int) (x - (x * 0.05));
                 System.out.println("\nAnda Mendapatkan Diskon 5%");
                 System.out.println("Total Harga yang Harus Dibayar : Rp. " + ttl + ",-");
-            } else if (x>450000) {
+            } else if (x>=450000 && x<600000) {
                 ttl = (int) (x - (x * 0.1));
                 System.out.println("\nAnda Mendapatkan Diskon 10%");
                 System.out.println("Total Harga yang Harus Dibayar : Rp." + ttl + ",-");
-            } else if (x>600000) {
+            } else if (x>=600000) {
                 ttl = (int) (x - (x * 0.15));
                 System.out.println("\nAnda Mendapatkan Diskon 15%");
                 System.out.println("Total Harga yang Harus Dibayar : Rp." + ttl + ",-");
