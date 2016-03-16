@@ -1,0 +1,8 @@
+Nama	: Hario Budiharjo
+NIM	: 155150201111133
+Kelas	: TIF-H
+
+*Class		: KelasBingkai
+*Object		: bingkai
+*Method		: setLuas,getIdPemesan,setIdPemesan,getNamaPemesan,setNamaPemesan,getTanggalPemesanan,setTanggalPemesanan,getJenisBingkai,setJenisBingkai,getPanjangBingkai,setPanjangBingkai,getLebarBingkai,setLebarBingkai,getDiskon,getHarga,getBayar,getDapetDiskon,cekHarga,diskon,bayar,dapetDiskon
+*Attribut	: idPemesan,namaPemesan,tanggalPemesanan,jenisBingkai,panjangBingkai,lebarBingkai,harga,bayar,diskon,luasBingkai,dapetDiskon
