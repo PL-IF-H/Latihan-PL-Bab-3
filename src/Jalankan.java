@@ -15,4 +15,7 @@ public class Jalankan{
 		System.out.print("Masukkan tanggal pemesanan \t: ");
 		tanggal = in.nextDouble();
 		b.Biodata(tanggal);
+		Kerja lagi = new Kerja();
+		lagi.Menu();
+}
 }
