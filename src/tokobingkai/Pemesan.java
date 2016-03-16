@@ -8,6 +8,8 @@ public class Pemesan {
     private String bingkai;
     private int ukuran;
     
+    pesanBingkai p = new pesanBingkai();
+    
     public void Pemesan(){ //Overloading Constructor
         ID = "";
         nama = "";

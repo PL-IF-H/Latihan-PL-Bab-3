@@ -31,6 +31,9 @@ public class pesanBingkai {
     public void setJenis(int jenis){
         this.jenis = jenis;
     }
+    public int getJenis(){
+        return jenis;
+    }
     public void setPanjang(int panjang){
         this.panjang = panjang;
     }

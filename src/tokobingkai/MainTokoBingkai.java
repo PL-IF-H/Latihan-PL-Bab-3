@@ -5,8 +5,10 @@ public class MainTokoBingkai {
         Scanner in = new Scanner(System.in);
         String ID, nama, tanggal;
         int jenis, panjang, lebar, luas, harga, input;
+        double D = 0;
         Pemesan p = new Pemesan();
         pesanBingkai b = new pesanBingkai();
+        diskon d = new diskon();
         
         //Pemasukan Data Pemesan
         System.out.print("Masukkan ID : ");
@@ -36,7 +38,8 @@ public class MainTokoBingkai {
                     lebar = in.nextInt();
                     b.setLebar(lebar);
                     b.luasdanharga_Bingkai(panjang,lebar);
-                    System.out.println("Harga Totalnya adalah = "+b.luasdanharga_Bingkai(b.luasdanharga_Bingkai(panjang,lebar),3000));
+                    System.out.println("Harga Total = "+b.luasdanharga_Bingkai(b.luasdanharga_Bingkai(panjang,lebar),3000));
+                    System.out.println("Harga Diskon = "+d.diskonBingkai(b.luasdanharga_Bingkai(b.luasdanharga_Bingkai(panjang,lebar),3000),D));
                     break;
                 case 2:  
                     System.out.println("Masukkan Ukuran Bingkai : ");
@@ -81,6 +84,7 @@ public class MainTokoBingkai {
                     b.setLebar(lebar);
                     b.luasdanharga_Bingkai(panjang,lebar);
                     System.out.println("Harga Totalnya adalah = "+b.luasdanharga_Bingkai(b.luasdanharga_Bingkai(panjang,lebar),5000));
+                    System.out.println("Harga Diskon = "+d.diskonBingkai(b.luasdanharga_Bingkai(b.luasdanharga_Bingkai(panjang,lebar),5000),D));
                     break;
                 case 6:
                     System.out.println("Masukkan Ukuran Bingkai : ");
@@ -92,6 +96,7 @@ public class MainTokoBingkai {
                     b.setLebar(lebar);
                     b.luasdanharga_Bingkai(panjang,lebar);
                     System.out.println("Harga Totalnya adalah = "+b.luasdanharga_Bingkai(b.luasdanharga_Bingkai(panjang,lebar),4000));
+                    System.out.println("Harga Diskon = "+d.diskonBingkai(b.luasdanharga_Bingkai(b.luasdanharga_Bingkai(panjang,lebar),4000),D));
                     break;
                 default : System.out.println("Input Salah!");    
             }
