@@ -1,0 +1,22 @@
+class = 1. pemesan 
+	2. detail bingkai
+
+object =  1. pembeli
+	  2. bingkai
+
+method = 1. data pelanggan
+	 2. panjang
+	 3. lebar
+    	 4. luas
+	 5. harga
+	 6. pilihan jenis
+
+attribut : 1. nama
+	   2. id
+	   3. tanggal
+	   4. panjang
+	   5. lebar
+	   6. luas
+	   7. harga
+	   8. jenis
+
