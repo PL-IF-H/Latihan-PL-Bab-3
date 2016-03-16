@@ -6,3 +6,11 @@ public class mainBingkai{
 		int pilihan;
 		String id, nama, tgl;
 		iniBingkai bingkai = new iniBingkai();
+		System.out.print("ID pemesan : ");
+		id = masukan.nextLine();
+		System.out.print("Nama : ");
+		nama = masukan.nextLine();
+		System.out.print("Tanggal : ");
+		tgl = masukan.nextLine();
+		bingkai.inputData(id, nama);
+		bingkai.inputData(tgl);

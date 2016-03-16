@@ -6,3 +6,15 @@ public class iniBingkai{
 	private String nama, id, tgl;
 	private int luas, pilihan;
 	private double Jml, Total=0;
+
+public void inputData(String id, String nama){ // overload
+	this.id = id;
+	this.nama = nama;
+}
+public void inputData(String tgl){	//overload
+	this.tgl = tgl;
+}
+
+public void luasBingkai(int p, int l){
+	luas = p*l;
+}
