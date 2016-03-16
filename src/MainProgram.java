@@ -33,7 +33,18 @@ Public class MainProgram {
 					System.out.println("Masukkan panjang dan lebar bingkai");
 					//use overloading constructor to input panjang, lebar
 					Bingkai bingkai[i] = new Bingkai(input.nextInt(), input.nextInt());
+					bingkai[i].harga(bingkai[i].jenis);
+					
+					switch(bingkai[i].jenis) {
+						case 1: case 5: case 6:
+							bingkai[i].diskon(bingkai[i].jenis);
+							break;
+						default:
+							break;
+					}
+					
 					i++;
+					break;
 			}
 		} while(pilihan != 3);
 	}
