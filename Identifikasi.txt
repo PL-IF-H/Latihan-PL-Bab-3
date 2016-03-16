@@ -1,0 +1,5 @@
+class   : OptionBingkai
+Atribut :IDPemesan, namaPemesan,tanggalPemesan,jenisBingkai,ukuranBingkai,panjang,lebar.
+
+Method  :OptionBingkai, jenisBingkai,panjang, lebar, HitungLuas,Diskon.
+Object  :Adit
