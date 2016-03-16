@@ -1,0 +1,4 @@
+Class: Client, Adit dan MainClass
+Object: client dan adit
+Method: Client(Constructor), getId, getNama, getTanggal, getJenis, getUkuran, Adit(constructor), getHarga, pembayaran dan main.
+Atribut: ID, nama, tanggal, jenis, ukuran, harga[], jenisBingkai[], dan totalPembayaran.
