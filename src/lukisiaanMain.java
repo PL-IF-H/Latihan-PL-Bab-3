@@ -28,4 +28,57 @@ public class lukisiaanMain {
             int pilihan = in.nextInt();
             switch (pilihan) {
                 case 1:
-                    
+                    System.out.print("Masukkan panjang bingkai : ");
+                    int panjang = in.nextInt();
+                    System.out.print("Masukkan lebar bingkai   : ");
+                    int lebar = in.nextInt();
+                    pemesan.luas = panjang * lebar;
+                    pemesan.displayPesanan(3000, pilihan, 1);break;
+                case 2:
+                    System.out.print("Masukkan panjang bingkai : ");
+                    panjang = in.nextInt();
+                    System.out.print("Masukkan lebar bingkai   : ");
+                    lebar = in.nextInt();
+                    pemesan.luas = panjang * lebar;
+                    pemesan.displayPesanan(2700, pilihan, 1);break;
+                case 3:
+                    System.out.print("Masukkan panjang bingkai : ");
+                    panjang = in.nextInt();
+                    System.out.print("Masukkan lebar bingkai   : ");
+                    lebar = in.nextInt();
+                    pemesan.luas = panjang * lebar;
+                    pemesan.displayPesanan(2300, pilihan, 1);break;
+                case 4:
+                    System.out.print("Masukkan panjang bingkai : ");
+                    panjang = in.nextInt();
+                    System.out.print("Masukkan lebar bingkai   : ");
+                    lebar = in.nextInt();
+                    pemesan.luas = panjang * lebar;
+                    pemesan.displayPesanan(2500, pilihan, 1);break;
+                case 5:
+                    System.out.print("Masukkan panjang bingkai : ");
+                    panjang = in.nextInt();
+                    System.out.print("Masukkan lebar bingkai   : ");
+                    lebar = in.nextInt();
+                    pemesan.luas = panjang * lebar;
+                    pemesan.displayPesanan(5000, pilihan, 1);break;
+                case 6:
+                    System.out.print("Masukkan panjang bingkai : ");
+                    panjang = in.nextInt();
+                    System.out.print("Masukkan lebar bingkai   : ");
+                    lebar = in.nextInt();
+                    pemesan.luas = panjang * lebar;
+                    pemesan.displayPesanan(4000, pilihan, 1);break;
+                default:
+                    System.out.println("Pilihan anda salah");
+            }
+            System.out.println("Ingin memesan lagi?  (Y/N)");
+            kembali = in.next();
+        } while ("Y".equalsIgnoreCase(kembali));
+        if ("N".equalsIgnoreCase(kembali)) {
+            System.out.println("Terimakasih telah berbelanja di Adit Art:*");
+            
+        }
+
+    }
+}
