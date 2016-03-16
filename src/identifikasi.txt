@@ -1,0 +1,4 @@
+class : pembeli, binkai
+object : pembeli 1, 2,...n ; binkai 1,2,...n
+atribut : nama_pem, tanggal, jenis_bing, panjang_bing,  lebar_bing,keliling, harga
+method : kelbing, diskon, total
