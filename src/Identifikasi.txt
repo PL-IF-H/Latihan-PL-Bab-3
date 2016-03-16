@@ -1,0 +1,6 @@
+Identifikasi 
+
+Class		: Bingkai, MainProgram
+Object		: jenisbingkai
+Attribut	: idpe, nape, tape, jenisbingkai, hargapermeter
+Method		: hitungluas, hargatotal, diskon
