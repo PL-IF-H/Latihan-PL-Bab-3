@@ -1,0 +1,18 @@
+Class MainProgram.java
+
+Class Pemesan.java
+Objek
+Pemesan1, Pemesan2, Pemesan-n
+
+Attribut
+idPemesan, namaPemesan, tanggalPemesanan, 
+Method
+
+Class Bingkai.java
+Objek
+Bingkai1, Bingkai2, Bingkai-n
+
+Attribut
+jenisBingkai, ukuranBingkai
+Method
+kelilingBingkai
