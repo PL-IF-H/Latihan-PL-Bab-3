@@ -1,10 +1,14 @@
 public class Pemesan {
 
-	public final String id, nama, tanggal;
+	public String id, nama, tanggal;
 	
-	public void Pemesan(String id, nama, tanggal) {
-		this.id = id;
-		this.nama = nama;
-		this.tanggal = tanggal;
+	public void Pemesan(String Id, String Nama, String Tanggal) {
+		id = Id;
+		nama = Nama;
+		tanggal = Tanggal;
+	}
+	
+	public void displayData() {
+		System.out.print(id+ "\t" + nama + "\t\t" + tanggal + "\t");
 	}
 }
