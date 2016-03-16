@@ -1,4 +1,4 @@
 Class    : Jenis, Pemesan
 Object   : jens, pem
-Attribut : id, nama, jen, p, l, hitung, j
+Attribut : id, nama, tgl, jen, p, l, hitung, j
 Method   : Pesan, MenuBarang, Perhitungan, Tampil
