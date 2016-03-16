@@ -18,7 +18,7 @@ public class Kerja{
 		}
 		System.out.println("7 untuk keluar");
 	}
-
+	
 	public void Proses(){
 		do{
 			System.out.print("Masukkan pilihan menu : ");
@@ -135,5 +135,9 @@ public class Kerja{
 			}
 			sum += harga;
 		}while(pesan<7);
+	}
+
+	public void Tampil(){
+		System.out.printf("Total harga Rp. %.0f,00\n",sum);
 	}
 }

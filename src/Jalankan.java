@@ -18,5 +18,6 @@ public class Jalankan{
 		Kerja lagi = new Kerja();
 		lagi.Menu();
 		lagi.Proses();
+		lagi.Tampil();
 }
 }
