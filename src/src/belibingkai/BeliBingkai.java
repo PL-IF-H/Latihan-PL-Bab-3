@@ -18,10 +18,13 @@ public class BeliBingkai {
         ID = input.nextLine();
         System.out.print("Masukkan Tanggal    : ");
         tanggal = input.nextLine(); 
+        pembeli.dataPelanggan(nama);
+        pembeli.dataPelanggan(ID, tanggal);
+        
         System.out.println("---------------------------------------------------");
         System.out.println("------------MASUKAN PANJANG DAN LEBAR--------------");
         System.out.println("---------------------------------------------------");
-        pembeli.dataPelanggan(nama, ID, tanggal);
+        
         System.out.print("Masukkan panjang  : ");
         panjang = input.nextDouble();
         System.out.print("Masukkan lebar    : ");

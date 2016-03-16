@@ -10,8 +10,11 @@ public class namaPelanggan {
     private String ID;
     private String tanggal;
     
-    public void dataPelanggan(String nama, String ID, String tanggal){
+    public void dataPelanggan(String nama){
         this.nama = nama;
+        
+    }
+    public void dataPelanggan (String ID, String tanggal){
         this.ID = ID;
         this.tanggal = tanggal;
     }
