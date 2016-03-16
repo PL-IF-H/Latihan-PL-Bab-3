@@ -13,4 +13,15 @@ public class Jualan{
 	public double getTanggal(){
 		return tanggal;
 	}
+
+	//overload method
+	public static void Biodata(String i, String n){
+		id = i;
+		nama = n;
+	}
+	
+//overload method
+	public static void Biodata(double t){
+		tanggal = t;
+	}
 }
