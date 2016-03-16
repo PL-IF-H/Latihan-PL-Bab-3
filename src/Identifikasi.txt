@@ -1,0 +1,4 @@
+class		: Program
+object		: user1, user2, user3, ..., user-n
+variable	: id, nama, tanggal, data (array), keliling, diskon, harga
+method		: Program (overloading constructor), setKeliling, hitung (overloading method),tampil, rapih (tidak terlalu penting, hanya untuk merapihkan tabel)
