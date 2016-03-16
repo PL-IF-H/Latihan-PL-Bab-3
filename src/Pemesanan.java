@@ -1,0 +1,22 @@
+package tgs3;
+
+import java.util.Scanner;
+public class Pemesanan {
+    Scanner in = new Scanner (System.in);
+    private int ID;
+    private String IDpemesan;
+    private String namaPemesan;
+    private String tanggalPemesanan;
+    private String jenisBingkai;
+    // overloading method
+    public void Pemesanan (int ID){
+        this.ID= ID;
+    }
+    // overloading method
+    public void Pemesanan (String IDpemesan, String namaPemesan, String tanggalPemesanan, String jenisBingkai){
+        this.IDpemesan=IDpemesan;
+        this.namaPemesan=namaPemesan;
+        this.tanggalPemesanan=tanggalPemesanan;
+        this.jenisBingkai=jenisBingkai;
+    }
+}
