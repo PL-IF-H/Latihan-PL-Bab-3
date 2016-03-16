@@ -24,11 +24,11 @@ public class Adit {
     public long getHarga(){
         return totalPembayaran;
     }
-    public long pembayaran(int harga, Client ukuran){
+    public long pembayaran(int harga, Client ukuran){ //overloading method pembayaran
         totalPembayaran=harga*ukuran.getUkuran();
         return totalPembayaran;
     }
-    public long pembayaran(long harga, Client ukuran){
+    public long pembayaran(long harga, Client ukuran){ //overloading method pembayaran
         totalPembayaran=harga*ukuran.getUkuran();
         if(totalPembayaran>300000 && totalPembayaran<=450000) totalPembayaran-=totalPembayaran*0.05;
         else if(totalPembayaran>450000 && totalPembayaran<=600000) totalPembayaran-=totalPembayaran*0.1;
