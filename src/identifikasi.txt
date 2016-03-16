@@ -1,0 +1,4 @@
+Class : Pemesanan, diskon
+objek : jenisBingkai
+atribut : ID, namaPemesn, tanggalPemesanan, jenisBingkai, p,l, hitamMetalik, coklatMetalik, coklatBercorak, hitamBercorak, emas, perak
+Method : Pemesanan, pemesan, diskon, void hitamMetalik, void coklatMetalik, void coklatBercorak, void hitamBercorak, void emas, void perak
