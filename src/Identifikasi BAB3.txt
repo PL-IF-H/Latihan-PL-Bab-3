@@ -1,0 +1,4 @@
+Class	 :BingkaiLukisan, MainBingkai
+Object	 :bl, jumlahpemesanan, 
+Attribut :panjang, lebar, luas, hargatotal, ukuran bingkai, ubah
+Method 	 :idp, psn,tgl, hitungluas
