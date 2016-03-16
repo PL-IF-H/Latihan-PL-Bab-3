@@ -19,7 +19,7 @@ public class Pemesanan {
         this.tanggalPemesanan=tanggalPemesanan;
         this.jenisBingkai=jenisBingkai;
     }
-    public void pemesanan (){
+    public void pemesan (){
         System.out.println("Masukkan ID pemesan : ");
         int ID=in.nextInt();
         System.out.println("Masukkan nama pemesan : ");
