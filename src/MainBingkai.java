@@ -1,3 +1,9 @@
+/*identifikasi
+class   : MainBingkai
+atribut : nama, alamat, tanggal, jenis, panjang, lebar
+behavior: 
+objek   : pemesan1, bingkai1
+*/
 import java.util.Scanner;
 
 public class MainBingkai{
@@ -13,9 +19,10 @@ public class MainBingkai{
 		alamat = in.nextLine();
 		System.out.print("Tanggal Pesan   : ");
 		tanggal = in.nextLine();
-		Pemesan ID = new Pemesan(nama, alamat, tanggal);
+		Pemesan pemesan1 = new Pemesan(nama, alamat, tanggal);
 		System.out.println("\nDaftar Jenis Bingkai : ");
 		System.out.println(Bingkai.displayBingkai());
+		System.out.println(Bingkai.displayDiskon());
 		
 		System.out.print("Pilih Jenis Bingkai : ");
 		jenis = in.nextLine();
@@ -23,9 +30,10 @@ public class MainBingkai{
 		panjang = in.nextDouble();
 		System.out.print("Lebar Bingkai       : ");
 		lebar = in.nextDouble();
-		Bingkai bingkai = new Bingkai(panjang, lebar, jenis);
+		Bingkai bingkai1 = new Bingkai(panjang, lebar, jenis);
 		in.nextLine();
-		bingkai.hitungTotal();
-		bingkai.displayData();
+		bingkai1.hitungTotal();
+		pemesan1.displayPemesan();
+		bingkai1.displayData();
 	}
 }

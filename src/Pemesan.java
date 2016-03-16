@@ -1,3 +1,9 @@
+/*identifikasi
+class   : Pemesan
+atribut : nama pemesan, alamat pemesan, tanggal pemesanan
+behavior: setNama, setAlamat, setTanggal
+objek   : pemesan 1, pemesan 2,...
+*/
 public class Pemesan{
 	private String namaPemesan, alamatPemesan, tanggalPesan;
 	
@@ -22,10 +28,11 @@ public class Pemesan{
 	public void setTanggal(String t){
 		tanggalPesan = t;
 	}
-	public String getNama(){
-		return namaPemesan;
-	}
-	public String getAlamat(){
-		return alamatPemesan;
+	public void displayPemesan(){
+		System.out.println("====================");
+		System.out.println("Data Pesanan");
+		System.out.println("Nama            : "+namaPemesan);
+		System.out.println("Alamat          : "+alamatPemesan);
+		System.out.println("Tanggal Pesan   : "+tanggalPesan);
 	}
 }

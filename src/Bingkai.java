@@ -2,6 +2,7 @@
 class   : Bingkai
 atribut : panjang bingkai, lebar bingkai, jenis bingkai, harga per meter, harga, total, diskon
 behavior: getLuas, displayBingkai, getHarga, getDiskon, hitungTotal, displayData
+objek   : bingkai lukisan
 */
 public class Bingkai{
 	private double panjang, lebar;
@@ -9,6 +10,7 @@ public class Bingkai{
 	public static String jenisBingkai = "1. Hitam Metalik\n"+"2. Coklat Metalik\n"+"3. Coklat Bercorak\n"+"4. Hitam Bercorak\n"+"5. Emas\n"+"6. Perak\n";
 	private double[] hargaPerM = {3000, 2700, 2300, 2500, 5000, 4000};
 	private double harga, total, diskon;
+	public static String nilaiDiskon = "Diskon 5% jika total harga > 300000\n"+"Diskon 10% jika total harga > 450000\n"+"Diskon 15% jika total harga > 600000\n";
 	
 	//default constructor
 	public Bingkai(){
@@ -44,6 +46,9 @@ public class Bingkai{
 	public static String displayBingkai(){
 		return jenisBingkai;
 	}
+	public static String displayDiskon(){
+		return nilaiDiskon;
+	}
 	public double getHarga(){
 		if(jenis.equals("Hitam Metalik")){
 			harga = getLuas()*hargaPerM[0];
@@ -67,14 +72,14 @@ public class Bingkai{
 	}
 	public double getDiskon(){
 		if(jenis.equals("Hitam Metalik")||jenis.equals("Emas")||jenis.equals("Perak")){
-			if(getHarga()>300000){
-				diskon = 0.05*harga;
+			if(getHarga()>600000){
+				diskon = 0.15*harga;
 			}
 			else if(getHarga()>450000){
 				diskon = 0.1*harga;
 			}
-			else if(getHarga()>600000){
-				diskon = 0.15*harga;
+			else if(getHarga()>300000){
+				diskon = 0.05*harga;
 			}
 		}
 		else{
@@ -104,8 +109,8 @@ public class Bingkai{
 	}
 	public void displayData(){
 		System.out.println("Luas Bingkai    : "+getLuas()+" m2");
-		System.out.println("Harga           : Rp "+getHarga());
-		System.out.println("Diskon          : Rp "+diskon);
-		System.out.println("Total Harga     : Rp "+total);
+		System.out.printf("%s%.1f\n", "Harga           : Rp ", getHarga());
+		System.out.printf("%s%.1f\n", "Diskon          : Rp ", diskon);
+		System.out.printf("%s%.1f\n", "Total Harga     : Rp ", total);
 	}
 }
