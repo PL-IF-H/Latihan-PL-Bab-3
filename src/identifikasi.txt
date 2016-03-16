@@ -1,0 +1,4 @@
+Class : Transaksi, Bingkai
+Object : pemesanan bingkai
+Atribut : id, nama, tanggal, panjangBingkai, lebarBingkai, diskon, hargaBingkai, jenisBingkai
+Method : TotalBayar(), hargaFinal(), DisplayTransaksi(), 
