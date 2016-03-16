@@ -19,4 +19,12 @@ public class Pemesanan {
         this.tanggalPemesanan=tanggalPemesanan;
         this.jenisBingkai=jenisBingkai;
     }
+    public void pemesanan (){
+        System.out.println("Masukkan ID pemesan : ");
+        int ID=in.nextInt();
+        System.out.println("Masukkan nama pemesan : ");
+        int namaPemesan = in.next();
+        System.out.println("Masukkan tanggal pemesanan : ");
+        String tanggalPemesanan = in.next();
+    }
 }
