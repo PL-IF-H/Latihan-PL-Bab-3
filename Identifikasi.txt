@@ -1,0 +1,4 @@
+Class: Bingkai, Pemesan
+Object: bingkai[0]...bingkai[n-1], pemesan
+Method: harga, jenis
+Attribut: IDPemesan, NamaPemesan, TanggalPemesan, PanjangBingkai, LebarBingkai, KelilingBingkai, JenisBingkai, dbBingkai, dbHarga
