@@ -34,6 +34,5 @@ public class TokoAdit {
                 b = false;
             }
         }return b;
-    
   }
 }
