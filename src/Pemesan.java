@@ -1,27 +1,20 @@
 public class Pemesan{
-	private String namaPemesan, alamatPemesan;
-	private double pjgPesanan, lbrPesanan;
+	private String namaPemesan, alamatPemesan, tanggalPesan;
+	Bingkai x = new Bingkai();
 	
-	public Pemesan(String nama, String alamat){
-		namaPemesan = nama;
-		alamatPemesan = alamat;
+	public void setNama(String n){
+		namaPemesan = n;
 	}
-	public void setPanjang(double panjang){
-		pjgPesanan = panjang;
+	public void setAlamat(String a){
+		alamatPemesan = a;
 	}
-	public void setLebar(double lebar){
-		lbrPesanan = lebar;
+	public void setTanggal(String t){
+		tanggalPesan = t;
 	}
 	public String getNama(){
 		return namaPemesan;
 	}
 	public String getAlamat(){
 		return alamatPemesan;
-	}
-	public double getPanjang(){
-		return pjgPesanan;
-	}
-	public double getLebar(){
-		return lbrPesanan;
 	}
 }
