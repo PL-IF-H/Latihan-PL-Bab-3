@@ -13,7 +13,7 @@ client. Setiap jenis bingkai memiliki harga yang berbeda tiap meter perseginya.
 Ketentuan Jenis Bingkai :
 Jenis Bingkai 	|	Harga per m
 Hitam Metalik 	|	3000
-Coklat Metalik 	|	2700
+isCoklat Metalik 	|	2700
 Coklat Bercorak |	2300
 Hitam Bercorak 	|	2500
 Emas 		|	5000
