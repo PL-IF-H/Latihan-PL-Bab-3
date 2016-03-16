@@ -1,18 +1,21 @@
-Class MainProgram.java
-
-Class Pemesan.java
+Class 
+	MainProgram.java
+Class
+	Pemesan.java
 Objek
-Pemesan1, Pemesan2, Pemesan-n
-
+	Pemesan1, Pemesan2, Pemesan-n
 Attribut
-idPemesan, namaPemesan, tanggalPemesanan, 
+	id, nama, tanggal
 Method
+	displayData
+	Constructor Pemesan
 
-Class Bingkai.java
+Class
+	Bingkai.java
 Objek
-Bingkai1, Bingkai2, Bingkai-n
-
+	Bingkai1, Bingkai2, Bingkai-n
 Attribut
-jenisBingkai, ukuranBingkai
+	panjang, lebar, luas, jenis, harga, diskon
 Method
-kelilingBingkai
+	ukuran, harga, diskon, displayData
+	Overloading constructor Bingkai
