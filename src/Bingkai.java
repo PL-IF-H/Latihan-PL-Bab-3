@@ -29,6 +29,9 @@ public class Bingkai{
 	public void setLebar(double l){
 		lebar = l;
 	}
+	public double getLuas(){
+		return panjang*lebar;
+	}
 	public static String displayBingkai(){
 		return jenisBingkai;
 	}
@@ -51,11 +54,30 @@ public class Bingkai{
 	public double getDiskon(){
 		return diskon;
 	}
-	//overloading method
-	public void hitungHarga(double p, double l, double diskon){
-		
-		
-		
-		
+	public void hitungHarga(){
+		if(jenis.equals("Hitam Metalik")){
+			total = getLuas()*hargaPerM[0]-diskon;
+		}
+		else if(jenis.equals("Coklat Metalik")){
+			total = getLuas()*hargaPerM[1];
+		}
+		else if(jenis.equals("Coklat Bercorak")){
+			total = getLuas()*hargaPerM[2];
+		}
+		else if(jenis.equals("Hitam Bercorak")){
+			total = getLuas()*hargaPerM[3];
+		}
+		else if(jenis.equals("Emas")){
+			total = getLuas()*hargaPerM[4]-diskon;
+		}
+		else if(jenis.equals("Perak")){
+			total = getLuas()*hargaPerM[5]-diskon;
+		}
+	}
+	public void displayData(){
+		System.out.println("Panjang Bingkai : "+panjang);
+		System.out.println("Lebar Bingkai   : "+lebar);
+		System.out.println("Luas Bingkai    : "+getLuas());
+		System.out.println("Total Harga     : "+total);
 	}
 }

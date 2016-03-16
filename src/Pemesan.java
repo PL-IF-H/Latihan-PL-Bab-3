@@ -3,7 +3,9 @@ public class Pemesan{
 	
 	//default constructor
 	public Pemesan(){
-		
+		namaPemesan = "";
+		alamatPemesan = "";
+		tanggalPesan = "";
 	}
 	//overloading constructor
 	public Pemesan(String n, String a, String t){

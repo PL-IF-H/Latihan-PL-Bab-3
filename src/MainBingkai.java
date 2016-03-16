@@ -28,5 +28,7 @@ public class MainBingkai{
 		if(bingkai.getJenis().equals("Hitam Metalik")||bingkai.getJenis().equals("Emas")||bingkai.getJenis().equals("Perak")){
 			bingkai.hitungDiskon();
 		}
+		bingkai.hitungHarga();
+		bingkai.displayData();
 	}
 }
