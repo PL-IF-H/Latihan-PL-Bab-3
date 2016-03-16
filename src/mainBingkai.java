@@ -20,22 +20,22 @@ public class mainBingkai {
         diskon j =  new diskon ();
         switch (pilihan){
             case 1 :
-                
+                j.hitamMetalik();
                 break;
             case 2:
-                
+                j.coklatMetalik();
                 break;
             case 3 :
-                
+                j.coklatBercorak();
                 break;
             case 4 :
-                
+                j.hitamBercorak();
                 break;
             case 5 :
-                
+                j.emas();
                 break;
             case 6 :
-                
+                j.perak();
                 break;
             default : {
                 System.out.println ("Tidak ditemukan");
