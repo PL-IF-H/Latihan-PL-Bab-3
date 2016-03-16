@@ -6,7 +6,11 @@ public class Pemesanan {
         ID = id;
         nama = nm;
         tanggal = tgl;
-    }
+    	}
+	public Pemesanan(int p, int l){
+        panjang = p;
+        lebar = l;
+    	}
 
 
 
