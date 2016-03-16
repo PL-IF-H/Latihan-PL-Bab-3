@@ -1,0 +1,7 @@
+Kelas : Client dan Pesanan
+Objek : Client1, Client2, Client3, Clientx, Bingkai
+Atribut : ID Pemesan, Nama Pemesan, Tanggal Pemesanan
+	  Jenis Bingkai, Harga_Bingkai, Luas Bingkai
+Method : Constructor client, getID_Pesanan, getNama_Pemesan, get_Tanggal
+	 setJenis_Bingkai, getJenis_Bingkai, hitungLuas, getHarga,
+	 getDiskon
