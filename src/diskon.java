@@ -31,4 +31,27 @@ public class diskon {
         this.perak=perak;
        
     }
+    public void hitamMetalik (){
+        System.out.println("Masukkan panjang :");
+        int p = input.nextInt();
+        System.out.println("Masukkan lebar :");
+        int l= input.nextInt ();
+        int harga = p*l*3000;
+        if (harga>600000){
+            System.out.println("Anda mendapat diskon sebesar 15%");
+            int hargaTotal = (int) (harga-(harga*0.15));
+            System.out.println("Harga total yang harus anda bayar = "+hargaTotal);
+        }else if (harga>450000){
+            System.out.println("Anda mendapat diskon sebesar 10%");
+            int hargaTotal = (int) (harga-(harga*0.1));
+            System.out.println("Harga total yang harus anda bayar = "+hargaTotal);
+        }else if (harag>300000){
+            Sysetem.out.println("Anda mendapat diskon sebesar 5%");
+            int hargaTotal = (int) (harga-(harga*0.05));
+            System.out.println("Harga total yang harus anda bayar = "+hargaTotal);
+        }else {
+            System.out.println("Harga total yang harus anda bayar = "+harga);
+        }
+        }
+    }
 }
