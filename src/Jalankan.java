@@ -17,5 +17,6 @@ public class Jalankan{
 		b.Biodata(tanggal);
 		Kerja lagi = new Kerja();
 		lagi.Menu();
+		lagi.Proses();
 }
 }

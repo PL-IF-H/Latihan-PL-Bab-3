@@ -18,4 +18,122 @@ public class Kerja{
 		}
 		System.out.println("7 untuk keluar");
 	}
+
+	public void Proses(){
+		do{
+			System.out.print("Masukkan pilihan menu : ");
+			pesan = in.nextInt(); 
+			switch (pesan){
+				case 1 : 
+					System.out.println("Anda akan memesan bingkai Hitam Metalik");
+					System.out.println("Masukkan pesanan anda");
+					System.out.print("Panjang\t : ");
+					p = in.nextInt();
+					System.out.print("Lebar\t : ");
+					l = in.nextInt();
+					harga = (p*l)*3000;
+					if (harga>300000){
+						diskon = (int)(harga*5)/100;
+						harga -= diskon;
+					}else if(harga>450000){
+						diskon = (int)(harga*10)/100;
+						harga -= diskon;
+					}else if(harga>600000){
+						diskon = (int)(harga*15)/100;
+						harga -= diskon;
+					}
+					System.out.println("Apakah anda ingin membeli yang lainnya?(1. yes 2. no)");
+            			q = in.nextInt();
+            		if (q == 1) {
+                		break;
+            		}continue;
+				case 2 :
+					System.out.println("Anda akan memesan bingkai Coklat Metalik");
+					System.out.println("Masukkan pesanan anda");
+					System.out.print("Panjang\t : ");
+					p = in.nextInt();
+					System.out.print("Lebar\t : ");
+					l = in.nextInt();
+					harga = (p*l)*2700;
+					System.out.println("Apakah anda ingin membeli yang lainnya?(1. yes 2. no)");
+            			q = in.nextInt();
+            		if (q == 1) {
+                		break;
+            		}continue;
+				case 3 :
+					System.out.println("Anda akan memesan bingkai Coklat Bercorak");
+					System.out.println("Masukkan pesanan anda");
+					System.out.print("Panjang\t : ");
+					p = in.nextInt();
+					System.out.print("Lebar\t : ");
+					l = in.nextInt();
+					harga = (p*l)*2300;
+					System.out.println("Apakah anda ingin membeli yang lainnya?(1. yes 2. no)");
+            			q = in.nextInt();
+            		if (q == 1) {
+                		break;
+            		}continue;
+				case 4 :
+					System.out.println("Anda akan memesan bingkai Hitam Bercorak");
+					System.out.println("Masukkan pesanan anda");
+					System.out.print("Panjang\t : ");
+					p = in.nextInt();
+					System.out.print("Lebar\t : ");
+					l = in.nextInt();
+					harga = (p*l)*2500;
+					System.out.println("Apakah anda ingin membeli yang lainnya?(1. yes 2. no)");
+            			q = in.nextInt();
+            		if (q == 1) {
+                		break;
+            		}continue;
+				case 5 :
+					System.out.println("Anda akan memesan bingkai Emas");
+					System.out.println("Masukkan pesanan anda");
+					System.out.print("Panjang\t : ");
+					p = in.nextInt();
+					System.out.print("Lebar\t : ");
+					l = in.nextInt();
+					harga = (p*l)*5000;
+					if (harga>300000){
+						diskon = (int)(harga*5)/100;
+						harga -= diskon;
+					}else if(harga>450000){
+						diskon = (int)(harga*10)/100;
+						harga -= diskon;
+					}else if(harga>600000){
+						diskon = (int)(harga*15)/100;
+						harga -= diskon;
+					}
+					System.out.println("Apakah anda ingin membeli yang lainnya?(1. yes 2. no)");
+            			q = in.nextInt();
+            		if (q == 1) {
+                		break;
+            		}continue;
+				case 6 :
+					System.out.println("Anda akan memesan bingkai Perak");
+					System.out.println("Masukkan pesanan anda");
+					System.out.print("Panjang\t : ");
+					p = in.nextInt();
+					System.out.print("Lebar\t : ");
+					l = in.nextInt();
+					harga = (p*l)*4000;
+					if (harga>300000){
+						diskon = (int)(harga*5)/100;
+						harga -= diskon;
+					}else if(harga>450000){
+						diskon = (int)(harga*10)/100;
+						harga -= diskon;
+					}else if(harga>600000){
+						diskon = (int)(harga*15)/100;
+						harga -= diskon;
+					}
+					System.out.println("Apakah anda ingin membeli yang lainnya?(1. yes 2. no)");
+            			q = in.nextInt();
+            		if (q == 1) {
+                		break;
+            		}continue;
+			}
+			sum += harga;
+		}while(pesan<7);
+	}
 }
