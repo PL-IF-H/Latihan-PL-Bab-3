@@ -1,0 +1,21 @@
+Class 
+	MainProgram.java
+Class
+	Pemesan.java
+Objek
+	Pemesan1, Pemesan2, Pemesan-n
+Attribut
+	id, nama, tanggal
+Method
+	displayData
+	Constructor Pemesan
+
+Class
+	Bingkai.java
+Objek
+	Bingkai1, Bingkai2, Bingkai-n
+Attribut
+	panjang, lebar, luas, jenis, harga, diskon
+Method
+	ukuran, harga, diskon, displayData
+	Overloading constructor Bingkai
