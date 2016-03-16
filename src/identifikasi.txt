@@ -1,0 +1,4 @@
+Class	 : Kerja, Jualan
+Object 	 : b, lagi
+Method 	 : Menu, Proses, Tampil, getNama, getID, getTanggal, Biodata, DisplayM
+Attribut : id, nama, tanggal, panjang, lebar 
