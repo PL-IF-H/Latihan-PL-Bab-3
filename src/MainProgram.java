@@ -22,7 +22,7 @@ public class MainProgram {
             switch (pilihan) {
                 case 1:
                     System.out.println("DAFTAR HARGA BINGKAI");
-                    jb.displayJB();
+                    jb.getJenisBingkai();
                     System.out.println("=================================");
                     break;
                 case 2:

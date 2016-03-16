@@ -1,5 +1,8 @@
 package Pemesan;
-
+/*object pemesan,bingkai
+class jenisbingkai, data pemesan,harga
+atribut id nama tanggal jenis
+*/
 import java.util.*;
 
 public class DataPemesan {
@@ -7,7 +10,7 @@ public class DataPemesan {
     private String id, nama, tanggal;
     Scanner in = new Scanner(System.in);
 
-    public void setData(String id, String nama, String tanggal) {
+    public void setData(String id, String nama, String tanggal) {//overload method
         this.id = id;
         this.nama = nama;
         this.tanggal = tanggal;

@@ -5,12 +5,13 @@ import java.util.*;
 public class Harga {
 
     private String jenisBingkai;
-    private int ukuran=0, panjang, lebar;
+    private int ukuran = 0, panjang, lebar;
     private double hitammetalik, coklatmetalik, coklatbercorak, hitambercorak, emas, perak;
     Scanner in = new Scanner(System.in);
     int pilihan;
+    
 
-    public void setJenis(double hitammetalik, double coklatmetalik, double coklatbercorak, double hitambercorak, double emas, double perak) {
+    public void setJenis(double hitammetalik, double coklatmetalik, double coklatbercorak, double hitambercorak, double emas, double perak) {//overloadmethod
         this.hitammetalik = hitammetalik;
         this.hitambercorak = hitambercorak;
         this.coklatmetalik = coklatmetalik;
@@ -94,53 +95,69 @@ public class Harga {
         return perak;
     }
 
-    public String getJenisBingkai() {
-        System.out.println("JENIS BINGKAI   |   HARGA/METER"
-                + "1.Hitam Metalik   |   3000"
-                + "2.Coklat Metalik  |   2700"
-                + "3.Coklat Bercorak |   2300"
-                + "4.Hitam Bercorak  |   2500"
-                + "5.Emas            |   5000"
-                + "6.Perak           |   4000");
+    public String[][] getJenisBingkai() {
+        String[][] jenisBingkai = {{"Jenis Bingkai", "Harga/Meter"},
+        {"Hitam Metalik", "3000"},
+        {"Coklat Metalik", "2700"},
+        {"Coklat Bercorak", "2300"},
+        {"Hitam Bercorak", "2500"},
+        {"Emas", "5000"},
+        {"Perak", "4000"}};
         return jenisBingkai;
     }
+    
 
+    
     public void getPesanan() {
+        Harga h = new Harga();
+    JenisBingkai jb = new JenisBingkai();
         System.out.println("================================");
         do {
-            System.out.println(jenisBingkai);
+            System.out.println(jb.getJenisBingkai());
             System.out.println("Masukkan Pilihan Anda : ");
             pilihan = in.nextInt();
             switch (pilihan) {
                 case 1:
                     System.out.println("Hitam Metalik");
-                    System.out.println("" + ukuran);
-                    System.out.println("" + hitammetalik);
+                    System.out.println("" +h.getUkuran());
+                    hitammetalik = ukuran*3000;
+                    System.out.println(+hitammetalik);
+                    System.out.println(""+h.getHItamMetalik());
                     break;
                 case 2:
                     System.out.println("Coklat Metalik");
-                    System.out.println("" + ukuran);
-                    System.out.println("" + coklatmetalik);
+                    System.out.println("" + h.getUkuran());
+                    coklatmetalik = ukuran*2700;
+                    System.out.println(+coklatmetalik);
+                    System.out.println("" + h.getCoklatMetalik());
                     break;
                 case 3:
                     System.out.println("Coklat Bercorak");
-                    System.out.println("" + ukuran);
-                    System.out.println("" + coklatbercorak);
+                    System.out.println("" + h.getUkuran());
+                    coklatbercorak = ukuran*2300;
+                    System.out.println(+coklatbercorak);
+                    System.out.println("" + h.getCoklatBercorak());
                     break;
                 case 4:
                     System.out.println("Hitam Bercorak");
-                    System.out.println("" + ukuran);
-                    System.out.println("" + hitambercorak);
+                    System.out.println("" + h.getUkuran());
+                    hitambercorak = ukuran*3000;
+                    System.out.println(+hitambercorak);
+                    System.out.println("" + h.getHitamBercorak());
                     break;
                 case 5:
                     System.out.println("Emas");
-                    System.out.println("" + ukuran);
-                    System.out.println("" + emas);
+                    System.out.println("" + h.getUkuran());
+                    emas = ukuran*3000;
+                    System.out.println(+emas);
+                    System.out.println("" + h.getEmas());
                     break;
                 case 6:
                     System.out.println("Perak");
-                    System.out.println("" + ukuran);
-                    System.out.println("" + perak);
+                    System.out.println("" + h.getUkuran());
+                    perak = ukuran*3000;
+                    System.out.println(+perak);
+                    System.out.println("" + h.getPerak());
                     break;
                 case 7:
                     break;
@@ -149,6 +166,7 @@ public class Harga {
     }
 
     public void display() {
+        System.out.println("");
 
     }
 }
