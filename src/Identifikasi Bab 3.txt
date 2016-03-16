@@ -1,0 +1,4 @@
+Kelas : Bingkai dan Pemesan
+Object : bingkai dan User
+Atribut : panjang, lebar, harga, dan nama, ID, tanggal
+Method : Jenis, Luas, Harga, Diskon
