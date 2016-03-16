@@ -14,3 +14,9 @@ public class mainBingkai{
 		tgl = masukan.nextLine();
 		bingkai.inputData(id, nama);
 		bingkai.inputData(tgl);
+		bingkai.keluarBingkai();
+		System.out.print("Panjang : ");
+		p = masukan.nextInt();
+		System.out.print("Lebar : ");
+		l = masukan.nextInt();
+		bingkai.luasBingkai(p, l);

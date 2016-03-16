@@ -18,3 +18,12 @@ public void inputData(String tgl){	//overload
 public void luasBingkai(int p, int l){
 	luas = p*l;
 }
+
+public void keluarBingkai(){
+	for (int a = 0; a<jBingkai.length; a++){
+		System.out.println((a+1)+" "+jBingkai[a]);
+	}
+	System.out.print("Pilihan : ");
+	pilihan = masukan.nextInt();
+}
+}
