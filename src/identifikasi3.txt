@@ -1,0 +1,5 @@
+Identifikasi
+class : JenisBingkai, pembeli
+object : bingkai, X
+atribut : panjang (sizep), lebar(sizel), nama, IDpembeli, tanggal, luas bingkai
+method : pembeli, luas bingkai, diskon
