@@ -1,7 +1,16 @@
 public class Pemesan{
 	private String namaPemesan, alamatPemesan, tanggalPesan;
-	Bingkai x = new Bingkai();
 	
+	//default constructor
+	public Pemesan(){
+		
+	}
+	//overloading constructor
+	public Pemesan(String n, String a, String t){
+		namaPemesan = n;
+		alamatPemesan = a;
+		tanggalPesan = t;
+	}
 	public void setNama(String n){
 		namaPemesan = n;
 	}
