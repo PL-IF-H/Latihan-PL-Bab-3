@@ -16,6 +16,30 @@ public class mainBingkai {
         System.out.println("| 5\t|Emas\t\t\t|"+"\t 5000\t\t|");
         System.out.println("| 6\t|Perak\t\t\t|"+"\t 4000\t\t|");
         System.out.println("--------------------------------------------------------");
-           
+        System.out.println ("Masukkan pilihan jenis bingkai :");
+        diskon j =  new diskon ();
+        switch (pilihan){
+            case 1 :
+                
+                break;
+            case 2:
+                
+                break;
+            case 3 :
+                
+                break;
+            case 4 :
+                
+                break;
+            case 5 :
+                
+                break;
+            case 6 :
+                
+                break;
+            default : {
+                System.out.println ("Tidak ditemukan");
+            }
+        }
     }
 }
