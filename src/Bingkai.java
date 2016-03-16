@@ -22,5 +22,26 @@ public class Bingkai {
         String tgl = input.nextLine();
         data.dataPemesanan(id, nama, tgl);
 
+        System.out.print("\nMasukkan Jenis Bingkai  : ");
+        String jenis = input.nextLine();
+        switch(jenis){
+            case "Hitam Metalik"  :System.out.print("Masukkan panjang     : ");
+                                   int p = input.nextInt();
+                                   System.out.print("Masukkan lebar       : ");
+                                   int l = input.nextInt();
+                                   data2.dataPemesanan(p, l);
+                                   int hm = data2.hitungUkuran() * 3000;
+                                   if (hm > 600000){
+                                       System.out.println("Selamat Anda mendapatkan diskon sebesar 5%\nBiaya yang harus Anda bayar : Rp "+ (hm - (hm*0.05)));
+                                   }else if (hm > 450000){
+                                       System.out.println("Selamat Anda mendapatkan diskon sebesar 10%\nBiaya yang harus Anda bayar : Rp "+(hm - (hm*0.1)));
+                                   }else if (hm > 300000){
+                                       System.out.println("Selamat Anda mendapatkan diskon sebesar 15%\nBiaya yang harus Anda bayar : Rp "+(hm - (hm*0.15)));
+                                   }else{
+                                       System.out.println("Biaya yang harus anda bayar : Rp "+hm);
+                                   }break;
+
+
+	}
     }
 }
