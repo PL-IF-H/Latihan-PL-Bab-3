@@ -15,9 +15,9 @@ class Bingkai {
         int result=0;
         KelilingBingkai = 2 * (PanjangBingkai + LebarBingkai);
         for (int i = 0; i < dbBingkai.length; i++) {
-            if (JenisBingkai.equals(dbBingkai[i])) {
+            if (JenisBingkai.equals(dbBingkai[i])) 
                 result = dbHarga[i] * KelilingBingkai;
-            }
+            
         }
         return result;
     }
