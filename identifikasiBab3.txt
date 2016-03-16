@@ -1,0 +1,8 @@
+Nama : Gabriel Mulyawan
+Nim  : 155150201111135
+Kelas: Informatika H 
+
+-Class   : ProgramAdit dan dataPemesan.
+-Objek   : User. 
+-Atribut : nama, tanggal, jenis, panjang, lebar, luas, harga, dan id.
+-Method  : data, setPanjang, setLebar, getLuas, setJenis, setDiskon, getHarga, dan pilihan.
