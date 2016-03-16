@@ -1,11 +1,35 @@
 
 package belibingkai;
 
+import java.util.Scanner;
+
 
 public class BeliBingkai {
 
     public static void main(String[] args) {
-        // TODO code application logic here
+        String nama,ID, tanggal;
+        double panjang,lebar,harga;
+        Scanner input = new Scanner(System.in);
+        namaPelanggan pembeli = new namaPelanggan();
+        
+        System.out.print("Masukkan Nama       : ");
+        nama = input.nextLine();
+        System.out.print("Masukkan ID         : ");
+        ID = input.nextLine();
+        System.out.print("Masukkan Tanggal    : ");
+        tanggal = input.nextLine();
+        pembeli.dataPelanggan(nama, ID, tanggal);
+        
+        System.out.println("Masukkan panjang : ");
+        panjang = input.nextDouble();
+        System.out.println("Masukkan lebar : ");
+        lebar = input.nextDouble();
+        detailBingkai bingkai = new detailBingkai(panjang, lebar);
+        bingkai.pilihanBingkai();
+        
+        
+        
+        
     }
     
 }

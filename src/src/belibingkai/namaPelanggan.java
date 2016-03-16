@@ -5,10 +5,14 @@
  */
 package belibingkai;
 
-/**
- *
- * @author IANLORD
- */
 public class namaPelanggan {
+    private String nama;
+    private String ID;
+    private String tanggal;
     
+    public void dataPelanggan(String nama, String ID, String tanggal){
+        this.nama = nama;
+        this.ID = ID;
+        this.tanggal = tanggal;
+    }
 }

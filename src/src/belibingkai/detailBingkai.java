@@ -12,28 +12,16 @@ import java.util.Scanner;
  * @author IANLORD
  */
 public class detailBingkai {
-    private double lebar;
-    private double panjang;
+private double panjang;
+private double lebar;
     
-    public void setLebar(){
+        public detailBingkai (double panjang, double lebar){
+        this.panjang = panjang;
         this.lebar = lebar;
     }
     
-    public void setPanjang(){
-        this.panjang = panjang;
-    }
-    
-    public double getLebar(){
-        return lebar;
-    }
-    
-    public double getPanjang(){
-        return panjang;
-    }
-    
     public double getLuas(){
-        double luas = panjang * lebar;
-        return luas;
+        return panjang*lebar;
     }
     
     public void pilihanBingkai (){
@@ -46,11 +34,29 @@ public class detailBingkai {
         System.out.println("5. Emas             = Rp5000 Permeter");
         System.out.println("6. Perak            = Rp4000 Permeter");
         int pilihan;
+        double harga;
         System.out.println("Masukkan pilihan anda : ");
         pilihan = input.nextInt();
         
         switch (pilihan){
-            
+            case 1 : harga = getLuas()*3000;
+                System.out.println("Total Harga adalah : "+harga);
+                break;
+            case 2 : harga = getLuas()*2700;
+                System.out.println("Total Harga adalah : "+harga);
+                break;
+            case 3 : harga = getLuas()*2300;
+                System.out.println("Total Harga adalah : "+harga);
+                break;
+            case 4 : harga = getLuas()*2500;
+                System.out.println("Total Harga adalah : "+harga);
+                break;
+            case 5 : harga = getLuas()*5000;
+                System.out.println("Total Harga adalah : "+harga);
+                break;
+            case 6 : harga = getLuas()*4000;
+                System.out.println("Total Harga adalah : "+harga);
+                break;
         }
         
         
