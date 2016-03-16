@@ -2,7 +2,7 @@
 
 Yang bertanda tangan dibawah ini
 
-* Nama : (( isi nama anda ))
+* Nama : IAN LORD PERDANA
 * NIM : (( isi NIM anda ))
 * Kelas : (( isi kelas anda ))
 
