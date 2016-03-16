@@ -8,12 +8,12 @@ public class Pemesan {
     private String bingkai;
     private int ukuran;
     
-    public void Pemesan(){
+    public void Pemesan(){ //Overloading Constructor
         ID = "";
         nama = "";
         tanggal = "";
     }
-    public void Pemesan(String id,String n,String t){
+    public void Pemesan(String id,String n,String t){ //Overloading Constructor
         ID = id;
         nama = n;
         tanggal = t;
@@ -26,11 +26,5 @@ public class Pemesan {
     }
     public void setTanggal(String t){
         tanggal = t;
-    }
-    
-    public void display(){
-        System.out.println("ID : "+ID);
-        System.out.println("Nama : "+nama);
-        System.out.println("Tanggal Pemesanan : "+tanggal);
     }
 }

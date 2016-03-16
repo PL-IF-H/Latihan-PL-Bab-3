@@ -10,17 +10,19 @@ public class pesanBingkai {
                                {"6","Perak","4000","Ya"}};
     
     public void displayDaftar(){
+        System.out.println("===================================================");
         System.out.printf("| %-3s | %-17s | %-11s | %-7s |\n",daftarBingkai[0][0],daftarBingkai[0][1],daftarBingkai[0][2],daftarBingkai[0][3]);
         for (int i = 1; i < daftarBingkai.length; i++) {
             System.out.printf("| %-3s | %-17s | %-11s | %-7s |\n",daftarBingkai[i][0],daftarBingkai[i][1],daftarBingkai[i][2],daftarBingkai[i][3]);
         }
+        System.out.println("===================================================");
     }
-    public pesanBingkai(){
+    public pesanBingkai(){ //Overloading Constructor
         jenis = 0;
         panjang = 0;
         lebar = 0;
     }
-    public pesanBingkai(int j,int p,int l){
+    public pesanBingkai(int j,int p,int l){ //Overloading Constructor
         jenis = j;
         panjang = p;
         lebar = l;
@@ -36,13 +38,13 @@ public class pesanBingkai {
         this.lebar = lebar;
     }
     
-    public static int luasBingkai(int panjang,int lebar){
-        int luas = panjang*lebar;
+    public static double luasdanharga_Bingkai(double panjang,double lebar){ //Overloading Method
+        double luas = panjang*lebar;
         return luas;
     }
-    public static double luasBingkai(double p,double l){
-        double luas = p*l;
-        return luas;
+    public static int luasdanharga_Bingkai(int luas,int harga){ //Overloading Method
+        int total = luas*harga;
+        return total;
     }
     
 }
