@@ -5,7 +5,9 @@ public class Jalankan{
 		double tanggal;
 		Scanner in = new Scanner (System.in);
 		Scanner in2 = new Scanner (System.in);
-
+		System.out.println("--------------------------------------------");
+		System.out.println("           Toko Bingkai Bang Adit");
+		System.out.println("--------------------------------------------");
 		Jualan b = new Jualan();
 		System.out.print("Masukkan nomor ID \t\t: ");
 		id = in.next();
@@ -15,9 +17,16 @@ public class Jalankan{
 		System.out.print("Masukkan tanggal pemesanan \t: ");
 		tanggal = in.nextDouble();
 		b.Biodata(tanggal);
+		System.out.println("--------------------------------------------");
+		System.out.println("------------------- MENU -------------------");
 		Kerja lagi = new Kerja();
 		lagi.Menu();
+		System.out.println("--------------------------------------------");
 		lagi.Proses();
+		System.out.println("--------------------------------------------");
+		System.out.println("                  Tagihan");
+		b.DisplayM();
 		lagi.Tampil();
-}
+		System.out.println("--------------------------------------------");
+	}
 }
