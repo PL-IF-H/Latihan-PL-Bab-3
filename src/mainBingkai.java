@@ -20,3 +20,4 @@ public class mainBingkai{
 		System.out.print("Lebar : ");
 		l = masukan.nextInt();
 		bingkai.luasBingkai(p, l);
+	}

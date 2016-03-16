@@ -26,4 +26,33 @@ public void keluarBingkai(){
 	System.out.print("Pilihan : ");
 	pilihan = masukan.nextInt();
 }
+public void hitungJml(){
+	Jml=luas*hBingkai[pilihan-1];
+}
+
+public void hitungTotal(){
+	if (pilihan==1 || pilihan==5 || pilihan==6){
+		if (Jml>600000){
+			Total += (Jml*0.85);
+		}
+		else if (Jml>450000){
+			Total += (Jml*0.90);
+		}
+		else if (Jml>300000){
+			Total += (Jml*0.95);
+		}
+		else {Total += Jml;}
+	} else {Total += Jml;}
+}
+
+public double gethitungTotal(){
+	return Total;
+}
+public void displayData(){
+	System.out.println("===================================");
+	System.out.println(tgl);
+	System.out.println("|ID| "+"\t"+"Nama"+"\t |"+"Total Harga|");
+	System.out.println("|"+id+"| "+"\t"+nama+"\t |"+Total+"|");
+	System.out.println("===================================");
+}
 }
