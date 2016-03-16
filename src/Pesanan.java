@@ -38,4 +38,21 @@ public class Pesanan {
     public double getHarga(){
         return this.harga_bingkai * luas;
     }
+	public double getDiskon(Pesanan a, double harga){
+        double diskon = 0;
+        if(("Hitam Metalik".equalsIgnoreCase(a.jenis_bingkai)) ||
+           ("Emas".equalsIgnoreCase(a.jenis_bingkai)) ||
+            ("Perak".equalsIgnoreCase(a.jenis_bingkai))){
+            if(a.getHarga() > 600000){
+                diskon = 0.15 * getHarga();
+            } else if(a.getHarga() > 450000){
+                diskon = 0.1 * getHarga();
+            } else if(a.getHarga() > 300000){
+                diskon = 0.05 * getHarga();
+            } else{
+                diskon = 0;
+            }
+        } 
+        return diskon;
+    }
 }
