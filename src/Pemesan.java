@@ -1,11 +1,11 @@
 /*identifikasi
 class   : Pemesan
-atribut : nama pemesan, alamat pemesan, tanggal pemesanan
+atribut : id, nama pemesan, alamat pemesan, tanggal pemesanan
 behavior: setNama, setAlamat, setTanggal
 objek   : pemesan 1, pemesan 2,...
 */
 public class Pemesan{
-	private String namaPemesan, alamatPemesan, tanggalPesan;
+	private String idPemesan, namaPemesan, alamatPemesan, tanggalPesan;
 	
 	//default constructor
 	public Pemesan(){
@@ -14,7 +14,8 @@ public class Pemesan{
 		tanggalPesan = "";
 	}
 	//overloading constructor
-	public Pemesan(String n, String a, String t){
+	public Pemesan(String id, String n, String a, String t){
+		idPemesan = id;
 		namaPemesan = n;
 		alamatPemesan = a;
 		tanggalPesan = t;
@@ -31,6 +32,7 @@ public class Pemesan{
 	public void displayPemesan(){
 		System.out.println("====================");
 		System.out.println("Data Pesanan");
+		System.out.println("ID              : "+idPemesan);
 		System.out.println("Nama            : "+namaPemesan);
 		System.out.println("Alamat          : "+alamatPemesan);
 		System.out.println("Tanggal Pesan   : "+tanggalPesan);

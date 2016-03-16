@@ -9,17 +9,19 @@ import java.util.Scanner;
 public class MainBingkai{
 	public static void main(String[] args){
 		Scanner in = new Scanner(System.in);
-		String nama, alamat, tanggal, jenis;
+		String id, nama, alamat, tanggal, jenis;
 		double panjang, lebar;
 		
 		System.out.println("===Toko Bingkai Adit===");
+		System.out.print("ID              : ");
+		id = in.nextLine();
 		System.out.print("Nama Anda       : ");
 		nama = in.nextLine();
 		System.out.print("Alamat          : ");
 		alamat = in.nextLine();
 		System.out.print("Tanggal Pesan   : ");
 		tanggal = in.nextLine();
-		Pemesan pemesan1 = new Pemesan(nama, alamat, tanggal);
+		Pemesan pemesan1 = new Pemesan(id, nama, alamat, tanggal);
 		System.out.println("\nDaftar Jenis Bingkai : ");
 		System.out.println("Jenis Bingkai\t\tHarga per m2");
 		System.out.println(Bingkai.displayBingkai());
