@@ -36,7 +36,7 @@ public class detailBingkai {
         int pilihan;
         double harga1,harga2,hargafinal;
         
-        System.out.println("Masukkan pilihan anda : ");
+        System.out.print("Masukkan pilihan anda : ");
         pilihan = input.nextInt();
         
         switch (pilihan){
@@ -101,7 +101,7 @@ public class detailBingkai {
                 
                hargafinal = harga1;
             }
-                System.out.println("Total Harga adalah : "+hargafinal);
+                System.out.print("Total Harga adalah : "+hargafinal);
                 break;
         }
         
