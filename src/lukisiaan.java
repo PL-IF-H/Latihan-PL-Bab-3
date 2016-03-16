@@ -1,3 +1,10 @@
+//Identifikasi
+//Class  : lukisiaan
+//Objek  : pemesan
+//Method : lukisiaan(constructor), lukisiaan (constructor), setLuas, diskon, displayPesanan 
+//Atribut: idpemesan, nama, tanggal, luas, bayar, diskon, kembali
+
+
 package tugasbiasa;
 public class lukisiaan {
 
