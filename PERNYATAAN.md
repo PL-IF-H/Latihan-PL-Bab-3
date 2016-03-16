@@ -2,7 +2,7 @@
 
 Yang bertanda tangan dibawah ini
 
-* Nama  : Liana Shanty Wato Wele
+* Nama  : Liana Shanty Wato Wele Keaan
 * NIM   : 155150201111131
 * Kelas : TIF-H
 
